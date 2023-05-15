@@ -10,7 +10,7 @@ void GetProductOfNumbers()
     System.Console.WriteLine("\nВведите, пожалуйста, число: ");
     int number = int.Parse(Console.ReadLine());
     System.Console.WriteLine();
-    int composition = 0;
+    int composition = 1;
 
     for (int i = 1; i <= number; i++)
     {
