@@ -18,23 +18,24 @@ void PrintNumber(int number)
     System.Console.Write(number);
 }
 
-int GetNumberFibonacci(int number)
+void GetNumberFibonacci(int number)
 {
     int firstNumber = 0, secondNumber = 1, result = 0;
 
-    if (number == 0) result = 0;
-    if (number == 1) result = 1;
-    System.Console.Write(" 0 1 ");
-    for (int i = 2; i <= number; i++)
-    {
-        result = firstNumber + secondNumber;
-        firstNumber = secondNumber;
-        secondNumber = result;
-        System.Console.Write($"{result} ");
-    }
-    return result;
+    if (number == 0) System.Console.WriteLine("0");
+    else if (number == 1) System.Console.WriteLine("0 1");
+    else {
+            System.Console.Write(" 0 1 ");
+            for (int i = 2; i <= number; i++)
+            {
+                result = firstNumber + secondNumber;
+                firstNumber = secondNumber;
+                secondNumber = result;
+                System.Console.Write($"{result} ");
+            }
+        }
 }
 
 int numberEntered = SetNumber();
-int result = GetNumberFibonacci(numberEntered);
+GetNumberFibonacci(numberEntered);
 
