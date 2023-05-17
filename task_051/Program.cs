@@ -73,6 +73,7 @@ void PrintSumOfArray(int[] collection)
     {
         if (i == length - 1)
         {
+            sumArray += collection[i];
             System.Console.Write($" {collection[i]}");
             break;
         }
